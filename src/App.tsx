@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import DonutChart from "./components/DonutChart";
-
 const COLORS = ["red", "green", "blue", "orange"];
 
 function randomPartitionSum100(): number[] {
