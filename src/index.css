@@ -1,0 +1,147 @@
+:root{
+  --bg: #f7f8fb;
+  --panel: #fff;
+  --muted: #8b8f98;
+  --accent: #3b82f6;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+html,body,#root{
+  height:100%;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.page{
+  width:720px;
+  max-width:100%;
+}
+
+.panel{
+  background:var(--panel);
+  border-radius:12px;
+  padding:20px;
+  box-shadow: 0 6px 20px rgba(20,20,40,0.06);
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+
+/* 左侧环形区域 */
+.donut-area{
+  flex:0 0 320px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* donut wrapper & svg */
+.donut-wrapper{
+  display:block;
+}
+
+.donut-svg{
+  width:100%;
+  height:100%;
+}
+
+/* center content inside donut */
+.donut-center{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  width:100%;
+}
+
+.numbers{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  align-items:center;
+  justify-content:center;
+}
+
+.num-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:6px;
+  color:#222;
+}
+
+.swatch{
+  width:12px;
+  height:12px;
+  border-radius:3px;
+  display:inline-block;
+}
+
+/* 右侧控制栏（展示即可） */
+.controls{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.controls-top{
+  display:flex;
+  gap:10px;
+  margin-bottom:6px;
+}
+
+.btn{
+  padding:8px 14px;
+  border-radius:8px;
+  border: none;
+  background:var(--accent);
+  color:white;
+  cursor:pointer;
+  font-weight:600;
+  box-shadow: 0 6px 12px rgba(59,130,246,0.15);
+}
+
+.btn.ghost{
+  background:transparent;
+  color:var(--muted);
+  border:1px solid #eee;
+  box-shadow:none;
+}
+
+.list{
+  background:#fafafa;
+  border-radius:8px;
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.item{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:6px 8px;
+  border-radius:6px;
+}
+
+.dot{
+  width:12px;
+  height:12px;
+  border-radius:3px;
+  display:inline-block;
+  margin-right:8px;
+}
+
+.value{
+  font-weight:700;
+}
