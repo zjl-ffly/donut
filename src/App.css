@@ -43,5 +43,10 @@
 
 .abc {
   color: #ddd;
+<<<<<<< HEAD
   counter-reset: dsddda;
+=======
+  counter-reset: ds;
+  height: 100px;
+>>>>>>> d70657e6c45799c1143f9b3b78c1629d5b38b437
 }
