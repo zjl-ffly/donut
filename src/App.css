@@ -48,4 +48,10 @@
 
   width: 20px;
   display: flex;
+
+  font-size: large;
+}
+
+.bbb {
+  height: 10px;
 }
